@@ -18,6 +18,7 @@ import { useWalletChartData } from "@/features/wallet-analyzer/hooks/use-wallet-
 import { TimeFilter } from "@/components/wallet/time-filter";
 import { ChainSelector } from "@/components/wallet/chain-selector";
 import { getChain } from "@/features/utils/get-chain";
+import { Loader, Loader2, Loader2Icon } from "lucide-react";
 
 export default function AnalyzerPage() {
     const [address, setAddress] = useState<string>();
@@ -36,21 +37,21 @@ export default function AnalyzerPage() {
 
     return (
         <div className="relative min-h-screen text-white overflow-hidden">
-  
-  {/* Background glow */}
-  <div className="absolute inset-0 -z-10">
-    <div className="absolute top-0 left-1/2 w-[600px] h-[600px] bg-blue-600/20 blur-[120px] -translate-x-1/2" />
-    <div className="absolute bottom-0 right-1/2 w-[500px] h-[500px] bg-purple-600/20 blur-[120px] translate-x-1/2" />
-  </div>
-        
+
+            <div className="absolute inset-0 -z-10">
+                <div className="absolute inset-0 bg-linear-to-br from-indigo-950 via-indigo-800 to-indigo-950" />
+
+                <div className="absolute top-0 left-1/2 w-225 h-full bg-blue-700/20 blur-[120px] -translate-x-1/2" />
+                <div className="absolute bottom-0 right-1/2 w-225 h-full bg-purple-700/30 blur-[120px] translate-x-1/2" />
+            </div>
             <div className="max-w-6xl mx-auto px-6 py-10">
                 {/* Header */}
                 <div className="mb-8">
                     <h1 className="text-3xl font-semibold tracking-tight">
-                        Wallet Analyzer
+                        Wallet Transaction Analyzer
                     </h1>
                     <p className="flex items-center gap-2 text-zinc-400 mt-1">
-                        
+
                         Analyzing {currentChain?.name}
                     </p>
                 </div>
@@ -64,7 +65,7 @@ export default function AnalyzerPage() {
 
                 {/* Loading */}
                 {isLoading && (
-                    <div className="mt-6 text-zinc-400">Loading data...</div>
+                    <div className="flex w-full justify-center"><Loader2Icon className="animate-spin" size={39}/></div>
                 )}
 
                 {/* Dashboard */}
