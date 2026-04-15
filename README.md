@@ -74,25 +74,29 @@ Built with **Next.js, TypeScript, Moralis, and Tailwind CSS**.
 ---
 
 ## 📂 Project Structure
-src/
-app/
-analyzer/
-api/
-components/
-wallet/
-common/
-features/
-wallet-analyzer/
-hooks/
-utils/
-types/
-constants/
-lib/
-api/
-viem/
-server/
-wallet/
 
+src/
+├── app/
+│ ├── analyzer/
+│ └── api/
+│
+├── components/
+│ ├── wallet/
+│ └── common/
+│
+├── features/
+│ └── wallet-analyzer/
+│ ├── hooks/
+│ ├── utils/
+│ ├── types/
+│ └── constants/
+│
+├── lib/
+│ ├── api/
+│ └── viem/
+│
+└── server/
+└── wallet/
 
 ---
 
