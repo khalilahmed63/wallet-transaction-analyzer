@@ -11,6 +11,25 @@ Built with **Next.js, TypeScript, Moralis, and Tailwind CSS**.
 👉 [https://wallet-transaction-analyzer.vercel.app/analyzer]
 
 ---
+### 🧪 Try It With
+##### Example wallet:
+```bash
+0x742d35Cc6634C0532925a3b844Bc454e4438f44e
+```
+
+###### Paste it into the app to see real data.
+
+---
+
+### 🔑 How It Works
+
+- User inputs wallet address
+- API fetches data via Moralis
+- Transactions are normalized
+- Analytics layer computes insights
+- UI renders charts + behavior
+
+---
 
 ## 📸 Preview
 
@@ -131,36 +150,8 @@ MORALIS_API_KEY=your_api_key_here
 npm run dev
 ```
 
-### 🧪 Try It With
-##### Example wallet:
-```bash
-0x742d35Cc6634C0532925a3b844Bc454e4438f44e
-```
-
-###### Paste it into the app to see real data.
-
 ---
 
-### 🔑 How It Works
-
-- User inputs wallet address
-- API fetches data via Moralis
-- Transactions are normalized
-- Analytics layer computes insights
-- UI renders charts + behavior
-
----
-
-### 📌 Roadmap
-
- - Multi-chain aggregation (combine all chains)
- - Wallet labeling (CEX / DEX / contracts)
- - ENS support
- - PnL estimation
- - Export reports (CSV / PDF)
- - Real-time updates
-
- ---
  
 ### 🤝 Contributing
 
