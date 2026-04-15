@@ -75,6 +75,8 @@ Built with **Next.js, TypeScript, Moralis, and Tailwind CSS**.
 
 ## 📂 Project Structure
 
+```bash
+
 src/
 ├── app/
 │ ├── analyzer/
@@ -97,6 +99,8 @@ src/
 │
 └── server/
 └── wallet/
+
+```
 
 ---
 
