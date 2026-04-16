@@ -27,8 +27,8 @@ export function TransactionTable({
                             <td className="p-3">
                                 <span
                                     className={`px-2 py-1 rounded text-xs ${tx.direction === "in"
-                                            ? "bg-green-900 text-green-400"
-                                            : "bg-red-900 text-red-400"
+                                        ? "bg-green-900 text-green-400"
+                                        : "bg-red-900 text-red-400"
                                         }`}
                                 >
                                     {tx.direction}
@@ -38,10 +38,10 @@ export function TransactionTable({
                             <td className="p-3">{tx.value.toFixed(4)}</td>
                             <td className="p-3">{tx.assetSymbol}</td>
                             <td className="p-3">
-                                {tx.counterparty.slice(0, 6)}...
+                                {tx?.counterparty && tx?.counterparty?.slice(0, 6)}...
                             </td>
                             <td className="p-3">
-                                {new Date(tx.timestamp).toLocaleDateString()}
+                                {tx.timestamp && new Date(tx.timestamp).toLocaleDateString()}
                             </td>
                         </tr>
                     ))}
